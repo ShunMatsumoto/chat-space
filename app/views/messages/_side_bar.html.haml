@@ -1,7 +1,8 @@
 .side-bar
   .side-bar__user-name
     .side-bar__user-name--top-item
-      .side-bar__user-name--top-item__name shun
+      .side-bar__user-name--top-item__name
+        = current_user.name
       .side-bar__user-name--top-item__icons 
         .side-bar__user-name--top-item__icons--edit
           = link_to '#', class: "icons" do
