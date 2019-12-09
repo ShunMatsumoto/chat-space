@@ -1,41 +1,36 @@
 .side-bar
+  
   .side-bar__user-name
+    
     .side-bar__user-name--top-item
+      
       .side-bar__user-name--top-item__name
         = current_user.name
       .side-bar__user-name--top-item__icons 
+        
         .side-bar__user-name--top-item__icons--edit
-          = link_to '#', class: "icons" do
+          = link_to new_group_path, class: "icons" do
             %i.fas.fa-edit
         .side-bar__user-name--top-item__icons--cog
-          = link_to '#', class: "icons" do
+          = link_to edit_user_path(current_user), class: "icons" do
             %i.fa.fa-cog
 
 
   .side-bar__group-list
-    
-    .side-bar__group-list--group-name
+    - current_user.groups.each do |group|
       .side-bar__group-list--group-name__top-box
-        = link_to '#', class: "group" do
-          techcamp
-      .side-bar__group-list--group-name__bottom-box
-        = link_to '#', class: "group" do
-          まだメッセージはありません
-
-    .side-bar__group-list--group-name
-      .side-bar__group-list--group-name__top-box
-        = link_to '#', class: "group" do
-          techcamp
+        = link_to group_messages_path(group), class: "group" do
+          = group.name
       .side-bar__group-list--group-name__bottom-box
         = link_to '#', class: "group" do
           まだメッセージはありません
     
-    .side-bar__group-list--group-name
-      .side-bar__group-list--group-name__top-box
-        = link_to '#', class: "group" do
-          techcamp
-      .side-bar__group-list--group-name__bottom-box
-        = link_to '#', class: "group" do
-          まだメッセージはありません
+    -# .side-bar__group-list--group-name
+    -#   .side-bar__group-list--group-name__top-box
+    -#     = link_to '#', class: "group" do
+    -#       techcamp
+    -#   .side-bar__group-list--group-name__bottom-box
+    -#     = link_to '#', class: "group" do
+    -#       まだメッセージはありません
     
     .side-bar__group-list--group-name__bottom-content
