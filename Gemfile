@@ -60,3 +60,6 @@ gem 'font-awesome-sass'
 gem 'devise'
 
 gem 'erb2haml'
+
+gem 'carrierwave'
+gem 'mini_magick'
