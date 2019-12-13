@@ -4,10 +4,12 @@
   .chat-main__group-list
     
     .chat-main__group-list--group-name
-      = @group.name
+      = current_user.name
+      
       
       .chat-main__group-list--member-name
-        = current_user.name
+        - @group.users.each do |user|
+          = user.name
     
 
     .chat-main__group-list--edit-btn
