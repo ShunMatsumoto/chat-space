@@ -193,6 +193,8 @@ a{
         // margin-top: 20px;
         width: calc(100% - 100px - 15px - 80px);
         position: relative;
+        display: flex;
+        justify-content: flex-end;
 
         &--text {
           // background-color: yellow;
@@ -206,8 +208,8 @@ a{
           font-size: 1.3rem;
           position: absolute;
           top: 0px;
-          right: 125px;
-          left: 900px;
+          // right: 125px;
+          // left: 900px;
 
           .hidden {
             display: none;
