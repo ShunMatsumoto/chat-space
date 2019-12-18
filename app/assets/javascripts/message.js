@@ -100,7 +100,7 @@ $(function(){
         var html = buildHTML(data);
         $('.messages').append(html);
         $('.new_message')[0].reset();
-        $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+        $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight});
         $('.chat-main__message-form--box__submit-btn').prop('disabled', false);
       })
       .fail(function() {
