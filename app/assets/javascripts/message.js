@@ -98,9 +98,8 @@ $(function(){
           $.each(messages, function(i, message) { 　//配列のmessagesの中身を一つ一つ取り出し、HTMLに変換したものを入れ物に足し合わせる
             insertHTML += buildHTML(message)
           });
-        
           $('.messages').append(insertHTML);        //メッセージが入ったHTMLに、入れ物ごと追加
-          $('.chat-main__message-form--box__submit-btn').animate({ scrollTop: $('.chat-main__message-form--box__submit-btn')[0].scrollHeight});
+          $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight});
         })
     }
   }
