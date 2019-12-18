@@ -73,7 +73,7 @@ $(function(){
     .done(function(data){
       var html = buildHTML(data);
       $('.messages').append(html);
-      $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight});
+      $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
       $('.new_message')[0].reset();
       $('.chat-main__message-form--box__submit-btn').prop('disabled', false);
     })
