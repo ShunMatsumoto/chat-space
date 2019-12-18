@@ -100,7 +100,7 @@ $(function(){
           });
         
           $('.messages').append(insertHTML);        //メッセージが入ったHTMLに、入れ物ごと追加
-          $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+          $('.chat-main__message-form--box__submit-btn').animate({ scrollTop: $('.chat-main__message-form--box__submit-btn')[0].scrollHeight});
         })
     }
   }
