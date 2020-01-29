@@ -177,7 +177,6 @@ a{
       right: 0;
       left: 0;
       bottom: 0;
-      // display: flex;
       justify-content: space-between;
 
       .new_message {
@@ -186,20 +185,15 @@ a{
       }
 
       &__submit-box {
-        // height: 50px;
         line-height: 50px;
-        // margin-left: 40px;
-        // margin-top: 20px;
         width: calc(100% - 100px - 15px - 80px);
         position: relative;
         display: flex;
         justify-content: flex-end;
 
         &--text {
-          // background-color: yellow;
           height: 50px;
           width: calc(100% + 40px);
-          // margin-left: 10px;
           color: #999999;
         }
 
@@ -207,8 +201,6 @@ a{
           font-size: 1.3rem;
           position: absolute;
           top: 0px;
-          // right: 125px;
-          // left: 900px;
 
           .hidden {
             display: none;

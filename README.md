@@ -23,6 +23,19 @@ Things you may want to cover:
 
 * ...
 
+## Chat-space
+プログラミングスクールTECH::EXPERTのカリキュラム内で作成したチャットアプリです。
+<img width="1440" alt="スクリーンショット 2020-01-29 12 41 47" src="https://user-images.githubusercontent.com/58409647/73326602-1bf83380-4296-11ea-9c36-a7aa29f52a37.png">
+
+
+## リンク
+http://3.114.54.129/
+
+## アプリ説明
+ユーザー登録後、グループを作成しチャットで会話をすることができます。
+グループにはユーザーを複数登録、編集でき、インクリメンタルサーチでユーザー検索が可能です。
+チャット機能は非同期通信で行っています。
+
 ## groups_usersテーブル
 
 |Column|Type|Options|
